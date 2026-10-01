@@ -1,0 +1,12 @@
+#include "student_config.h"
+#include "challenge_api.h"
+
+const char* configured_student_id()
+{
+    return CONFIGURED_STUDENT_ID;
+}
+
+const char* configured_student_label()
+{
+    return "Student ID: @STUDENT_ID@";
+}

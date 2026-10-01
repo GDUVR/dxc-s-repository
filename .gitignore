@@ -1,0 +1,37 @@
+# ============================================================
+#  Recruitment Test — .gitignore
+#  原则：只提交源码与文档，不提交生成物、工具包、构建产物
+# ============================================================
+
+# ---- 脚本生成的测试图片（3000 余张，勿提交）----
+02_image_recognition/generated_images/
+
+# ---- 工具链安装包（按 README 应解压到 C:\DevTools，不属于作业内容）----
+*.zip
+
+# ---- 可执行文件（含题目提供的 generate.exe 与编译产出的 challenge.exe）----
+*.exe
+
+# ---- CMake / MinGW 构建产物 ----
+03_cmake_build/build/
+03_cmake_build/build-*/
+*.o
+*.obj
+*.a
+*.d
+*.make
+*.cmake
+*.rsp
+*.bin
+
+# ---- 显式保留：题目包必需的外部目标文件 ----
+!03_cmake_build/lib/challenge.o
+!03_cmake_build/CMakeLists.txt
+
+# ---- 编辑器 / 系统杂项 ----
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+Thumbs.db
+desktop.ini

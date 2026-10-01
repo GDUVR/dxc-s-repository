@@ -1,0 +1,3 @@
+#pragma once
+
+#define CONFIGURED_STUDENT_ID "@STUDENT_ID@"
